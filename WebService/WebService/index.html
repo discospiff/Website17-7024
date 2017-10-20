@@ -11,12 +11,23 @@
         <h3>I plan to add some web services.</h3>
         <br /><br />
         <strong>My favorite trees for Greater Cincinnati</strong>
+        <form name="search" method="get" action="http://www.plantplaces.com/perl/mobile/viewplantsjson.pl">
+            <label for="Combined_Name">Plant Name:</label><input type="text" name="Combined_Name"/>
+            <br/>
+            <input type="submit" value="Search"/>
+
+        </form>
+
         <ul>
             <li><a href="http://www.plantplaces.com/perl/viewplantdetails.pl?filter=plant&plant_ID=83&Region=&Region_Search=&fullname=Cercis%20canadensis%20%20Eastern%20Redbud">Redbud</a></li>
             <li>Pawpaw</li>
             <li>Fuji Apple</li>
         </ul>
+
+
         <img src="images/Redbud.png" alt="A redbud tree with beautifl pink blossoms" width="80" height="80" />
+
+
         <a href="ContactUs.html">Contact Us</a>
     </div>
 </body>
