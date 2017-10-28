@@ -66,6 +66,7 @@
     <Content Include="images\Redbud.png" />
     <Content Include="index.html" />
     <Content Include="Service1.svc" />
+    <Content Include="styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
