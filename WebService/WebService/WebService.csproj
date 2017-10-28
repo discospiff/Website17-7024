@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ContactUs.html" />
+    <Content Include="images\ic_home.png" />
     <Content Include="images\Redbud.png" />
     <Content Include="index.html" />
     <Content Include="Service1.svc" />
