@@ -21,3 +21,7 @@ h3 {
     position:relative;
     margin-top: 4em;
 }
+
+.junk {
+    display:none;
+}
