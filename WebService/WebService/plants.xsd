@@ -4,9 +4,16 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="genus" type="xs:string"/>
-        <xs:element name="species" type="xs:string"  minOccurs="0"/>
+        <xs:element name="species" type="xs:string"  minOccurs="0" default="spp."/>
         <xs:element name="cultivar" type="xs:string"  minOccurs="0"/>
         <xs:element name="common_name" type="xs:string"  minOccurs="0"/>
+        <xs:element name="height" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:maxInclusive value="100"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
