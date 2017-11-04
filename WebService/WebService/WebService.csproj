@@ -65,6 +65,7 @@
     <Content Include="images\ic_home.png" />
     <Content Include="images\Redbud.png" />
     <Content Include="index.html" />
+    <Content Include="plants.html" />
     <Content Include="plants.xml" />
     <Content Include="Service1.svc" />
     <Content Include="print.css" />
