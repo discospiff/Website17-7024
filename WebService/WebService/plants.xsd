@@ -4,6 +4,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="genus" type="xs:string"/>
+        <xs:element name="species" type="xs:string"  minOccurs="0"/>
+        <xs:element name="cultivar" type="xs:string"  minOccurs="0"/>
+        <xs:element name="common_name" type="xs:string"  minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
