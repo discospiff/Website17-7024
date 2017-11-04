@@ -9,4 +9,26 @@
   <begin_bloom_date>2017-03-01</begin_bloom_date>
   <end_bloom_date>2017-03-15</end_bloom_date>
   <edible>true</edible>
+  <sun_tolerance>part_shade</sun_tolerance>
+  <bloom_color>yellow</bloom_color>
+  <specimens>
+    <specimen>
+      <latitude>-22.5</latitude>
+      <longitude>-80</longitude>
+      <planted_by>Guillermo Caal</planted_by>
+      <comments>A beautiful plant.</comments>
+    </specimen>
+    <specimen>
+      <latitude>39.74</latitude>
+      <longitude>-77</longitude>
+      <planted_by>Beth Jones</planted_by>
+      <comments>A plant in Flushing Queens</comments>
+    </specimen>
+    <specimen>
+      <latitude>39.74</latitude>
+      <longitude>-84.51</longitude>
+      <planted_by>Beth Jones</planted_by>
+      <comments>A plant in Flushing Queens</comments>
+    </specimen>
+  </specimens>
 </plant>

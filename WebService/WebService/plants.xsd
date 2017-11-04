@@ -66,7 +66,7 @@
         <xs:element name="specimens" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="specimen" type="" minOccurs="1" maxOccurs="unbounded"/>
+              <xs:element name="specimen" type="specimenType" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -74,5 +74,24 @@
     </xs:complexType>
   </xs:element>
 
-
+  <xs:complexType name="specimenType">
+    <xs:sequence>
+      <xs:element name="latitude" type="xs:decimal"  minOccurs="0"/>
+      <xs:element name="longitude" type="xs:decimal"  minOccurs="0"/>
+      <xs:element name="planted_by" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="255"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="comments" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="1024"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>
