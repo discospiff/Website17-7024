@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="plants.xsl"?>
 <plant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="plants.xsd">
   <genus>Cercis</genus>
@@ -27,8 +28,14 @@
     <specimen>
       <latitude>39.74</latitude>
       <longitude>-84.51</longitude>
-      <planted_by>Beth Jones</planted_by>
-      <comments>A plant in Flushing Queens</comments>
+      <planted_by>Brandan Jones</planted_by>
+      <comments>A plant on Fountain Square</comments>
+    </specimen>
+    <specimen>
+      <latitude>52.74</latitude>
+      <longitude>-1</longitude>
+      <planted_by>Joe Bloggs</planted_by>
+      <comments>Hyde Park</comments>
     </specimen>
   </specimens>
 </plant>

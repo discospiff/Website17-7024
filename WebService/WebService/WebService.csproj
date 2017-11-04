@@ -67,6 +67,7 @@
     <Content Include="index.html" />
     <Content Include="plants.html" />
     <Content Include="plants.xml" />
+    <Content Include="plants.xsl" />
     <Content Include="Service1.svc" />
     <Content Include="print.css" />
     <Content Include="mobile.css" />
