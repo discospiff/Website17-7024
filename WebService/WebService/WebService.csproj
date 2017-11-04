@@ -65,6 +65,7 @@
     <Content Include="images\ic_home.png" />
     <Content Include="images\Redbud.png" />
     <Content Include="index.html" />
+    <Content Include="plants.xml" />
     <Content Include="Service1.svc" />
     <Content Include="print.css" />
     <Content Include="mobile.css" />
@@ -82,6 +83,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="plants.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
