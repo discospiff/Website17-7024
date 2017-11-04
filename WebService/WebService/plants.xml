@@ -6,4 +6,7 @@
   <cultivar>Ruby Falls</cultivar>
   <common_name>Ruby Falls Redbud</common_name>
   <height>100</height>
+  <begin_bloom_date>2017-03-01</begin_bloom_date>
+  <end_bloom_date>2017-03-15</end_bloom_date>
+  <edible>true</edible>
 </plant>
