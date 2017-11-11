@@ -3,6 +3,7 @@
 <plant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="plants.xsd">
 	<!-- All payload data belongs here -->
+	<foo>bar</foo>
 	<genus>Cercis</genus> 
 	<species>canadensis</species>
 	<common_name>Eastern Redbud</common_name>

@@ -31,7 +31,7 @@ namespace WebService
                 //has the user uploaded a file, and is it a valid file.
                 if (XMLFileUpload.HasFile)
                 {
-                    
+                    fileName = XMLFileUpload.FileName;
                     // now check the extension.
                     String fileExtension = System.IO.Path.GetExtension(fileName).ToLower();
 
@@ -43,7 +43,7 @@ namespace WebService
                         // if we are here, the file is valid, so save the file.
 
                         XMLFileUpload.PostedFile.SaveAs(path + XMLFileUpload.FileName);
-                        fileName = XMLFileUpload.FileName;
+                        fileName = path + XMLFileUpload.FileName;
                         LblStatus.Text = "Upload Successful";
                     } else
                     {
@@ -83,13 +83,19 @@ namespace WebService
 
             // validate the document.
             XmlReader xmlReader = XmlReader.Create(fileName, settings);
-            //read the document one line at a time.
-            while(xmlReader.Read())
+            try
             {
-                // leave blank for the moment.
+                //read the document one line at a time.
+                while (xmlReader.Read())
+                {
+                    // leave blank for the moment.
 
+                }
+                LblStatus.Text = "Validation Passed";
+            } catch (Exception e)
+            {
+                LblStatus.Text = e.Message;
             }
-            LblStatus.Text = "Validation Passed";
         }
 
         /// <summary>
@@ -101,6 +107,7 @@ namespace WebService
         {
             Console.WriteLine("Vaidation error: " + args.Message);
             LblStatus.Text = "Validation Failed.  Message: " + args.Message;
+            throw new Exception("Validation failed.  Message: " + args.Message);
         }
 
     }
