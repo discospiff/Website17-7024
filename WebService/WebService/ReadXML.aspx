@@ -14,6 +14,8 @@
             <asp:FileUpload ID="XMLFileUpload" runat="server" />
             <br />
             <asp:Button ID="Button1" runat="server" CssClass="button" OnClick="Button1_Click" Text="Submit" />
+            <br />
+            <asp:Label ID="LblStatus" runat="server" Text="No File Selected"></asp:Label>
         </div>
     </form>
 </body>

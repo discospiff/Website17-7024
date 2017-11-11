@@ -24,9 +24,25 @@ namespace WebService
                 // allowedExtensions[0] = ".xml";
 
                 //has the user uploaded a file, and is it a valid file.
-                String fileName = XMLFileUpload.FileName;
-                // now check the extension.
-                String fileExtension = System.IO.Path.GetExtension(fileName).ToLower();
+                if (XMLFileUpload.HasFile)
+                {
+                    String fileName = XMLFileUpload.FileName;
+                    // now check the extension.
+                    String fileExtension = System.IO.Path.GetExtension(fileName).ToLower();
+
+                    // is this file extension legal
+                    if (fileExtension == allowedExtensions[0])
+                    {
+                        // construct the path where we want to save the file.
+                        String path = Server.MapPath("~/XML/");
+                        // if we are here, the file is valid, so save the file.
+                        XMLFileUpload.PostedFile.SaveAs(path + XMLFileUpload.FileName);
+                        LblStatus.Text = "Upload Successful";
+                    } else
+                    {
+                        LblStatus.Text = "File extension not permitted";
+                    }
+                }
             }
         }
 
