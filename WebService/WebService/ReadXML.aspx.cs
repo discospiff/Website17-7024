@@ -11,7 +11,23 @@ namespace WebService
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (IsPostBack)
+            {
+                // we are hearing back from the page, after it was initially loaded.
 
+                // see if the user uploaded a document.
+
+                // is it a valid file?
+                Boolean validFile = false;
+                String[] allowedExtensions = { ".xml" };
+                // String[] allowedExtensions = new String[1];
+                // allowedExtensions[0] = ".xml";
+
+                //has the user uploaded a file, and is it a valid file.
+                String fileName = XMLFileUpload.FileName;
+                // now check the extension.
+                String fileExtension = System.IO.Path.GetExtension(fileName).ToLower();
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
