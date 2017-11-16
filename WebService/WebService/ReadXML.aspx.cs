@@ -110,5 +110,11 @@ namespace WebService
             throw new Exception("Validation failed.  Message: " + args.Message);
         }
 
+        protected void BtnConvertWebService_Click(object sender, EventArgs e)
+        {
+            UnitConversion.lengthUnitSoapClient client = new UnitConversion.lengthUnitSoapClient("lengthUnitSoap12");
+            double convertedValue = client.ChangeLengthUnit(250, UnitConversion.Lengths.Meters, UnitConversion.Lengths.Inches);
+            LblStatus.Text = "250 meters in inches is: " + convertedValue;
+        }
     }
 }

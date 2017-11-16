@@ -16,6 +16,8 @@
             <asp:Button ID="Button1" runat="server" CssClass="button" OnClick="Button1_Click" Text="Submit" />
             <br />
             <asp:Label ID="LblStatus" runat="server" Text="No File Selected"></asp:Label>
+            <br />
+            <asp:Button ID="BtnConvertWebService" runat="server" OnClick="BtnConvertWebService_Click" Text="Convert 250 Meters to Inches" />
         </div>
     </form>
 </body>
