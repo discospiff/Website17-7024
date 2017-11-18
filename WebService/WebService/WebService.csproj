@@ -84,6 +84,7 @@
     <Content Include="print.css" />
     <Content Include="mobile.css" />
     <Content Include="styles.css" />
+    <Content Include="ViewPlants.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +117,13 @@
     <Compile Include="TemperatureConversion.asmx.cs">
       <DependentUpon>TemperatureConversion.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewPlants.aspx.cs">
+      <DependentUpon>ViewPlants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewPlants.aspx.designer.cs">
+      <DependentUpon>ViewPlants.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
